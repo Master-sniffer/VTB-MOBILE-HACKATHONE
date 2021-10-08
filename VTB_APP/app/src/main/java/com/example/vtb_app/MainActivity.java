@@ -2,7 +2,9 @@ package com.example.vtb_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,12 +23,17 @@ public class MainActivity extends AppCompatActivity {
 //    private TextView View_Result;
 //    private Word_Adaptation word_adaptation;
 
+    SharedPreferences.Editor myEditor;
+    SharedPreferences myPreferences;
+    public float water;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        myPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+        myEditor = myPreferences.edit();
 
 
 //        EnterText = findViewById(R.id.EnterText);
@@ -51,11 +58,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void UzheClient(View view){
-        System.out.println("anal");
+        myEditor.putFloat("Water", water+=1);
+        myEditor.commit();
     }
 
     public void Nachat (View view){
-        System.out.println("angar");
+         water = (myPreferences.getFloat("Water", 0));
+         System.out.println(water);
     }
 
 //    private List<Word>  getWords() {
