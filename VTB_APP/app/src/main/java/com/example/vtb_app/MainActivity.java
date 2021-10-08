@@ -2,6 +2,7 @@ package com.example.vtb_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         myEditor = myPreferences.edit();
 
 
+
 //        EnterText = findViewById(R.id.EnterText);
 //        button_acpt = findViewById(R.id.button_acpt);
 //        View_Result = findViewById(R.id.View_Result);
@@ -58,13 +60,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void UzheClient(View view){
-        myEditor.putFloat("Water", water+=1);
-        myEditor.commit();
+//        myEditor.putFloat("Water", water+=1);
+//        myEditor.commit();
     }
 
     public void Nachat (View view){
-         water = (myPreferences.getFloat("Water", 0));
-         System.out.println(water);
+//         water = (myPreferences.getFloat("Water", 0));
+//         System.out.println(water);
+
+        Intent myIntent = new Intent(view.getContext(), MainPaige.class);
+        startActivity(myIntent);
     }
 
 //    private List<Word>  getWords() {
