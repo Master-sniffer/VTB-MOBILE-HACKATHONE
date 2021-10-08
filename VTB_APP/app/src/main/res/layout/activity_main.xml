@@ -9,10 +9,51 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/View_Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_acpt"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textAlignment="center"
+        android:textColor="#F8F8F8"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/EnterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Enter your text here"
+        android:inputType="textPersonName"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat"
         android:text="@string/Logo"
         android:textAlignment="center"
-        android:textSize="20sp" />
+        android:textColor="#F8F8F8"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_acpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="244dp"
+        android:text="Button" />
+
 </RelativeLayout>
