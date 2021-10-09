@@ -61,8 +61,8 @@ public class Word_Adaptation extends RecyclerView.Adapter<Word_Adaptation.WordVi
         public WordViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            englishVersion = itemView.findViewById(R.id.Russian_word_1);
-            russianVersion = itemView.findViewById(R.id.English_word_1);
+//            englishVersion = itemView.findViewById(R.id.Russian_word_1);
+//            russianVersion = itemView.findViewById(R.id.English_word_1);
         }
 
         public void bind(Word word) {

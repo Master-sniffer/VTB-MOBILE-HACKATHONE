@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    >
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -14,46 +15,47 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="93dp"
         android:layout_marginTop="70dp"
-        app:srcCompat="@drawable/woman_it" />
+        android:src="@drawable/woman_it" />
 
-<TextView
-android:id="@+id/textView"
-android:layout_width="378dp"
-android:layout_height="wrap_content"
-android:layout_alignParentStart="true"
-android:layout_alignParentTop="true"
-android:layout_centerHorizontal="true"
-android:layout_marginStart="18dp"
-android:layout_marginTop="11dp"
-android:fontFamily="@font/montserrat_bold"
-android:text="Научитесь инвестировать с ВТБ! Сегодня."
-android:textColor="@color/black"
-android:textSize="45sp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="375dp"
+        android:layout_height="208dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Стань клиентом сейчас и получи стартовый бонус для персонажа"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
 
-<TextView
-android:id="@+id/textView2"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_alignParentBottom="true"
-android:layout_centerHorizontal="true"
-android:layout_marginBottom="77dp"
-android:clickable="true"
-android:onClick="UzheClient"
-android:text="Продолжить без регистрации"
-android:textSize="24sp" />
-
-    <Button
-        android:id="@+id/button_finish_reg"
-        android:layout_width="227dp"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="172dp"
+        android:layout_marginBottom="102dp"
+        android:clickable="true"
+        android:onClick="Vse_Ravno"
+        android:text="Все равно продолжить"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_finish_reg"
+        android:layout_width="289dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="175dp"
         android:background="@drawable/button_background"
-        android:onClick="Nachat"
+        android:onClick="Stat_Clientom"
         android:shadowColor="#4AC2FF"
-        android:text="Начать"
+        android:text="Стать клиентов ВТБ"
         android:textSize="20dp"
         app:backgroundTint="#009AFF" />
-    </RelativeLayout>
 
+
+</RelativeLayout>
