@@ -16,9 +16,13 @@ public class MainPaige extends Activity {
 
     }
 
-    public void New_Game(View view){
-//        myEditor.putFloat("Water", water+=1);
-//        myEditor.commit();
+    public void Vse_Ravno(View view){
+
+        
+    }
+
+    public void Stat_Clientom(View view){
+
     }
 
 }

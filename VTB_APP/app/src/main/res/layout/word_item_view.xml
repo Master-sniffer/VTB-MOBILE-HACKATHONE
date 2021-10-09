@@ -50,12 +50,12 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="175dp"
-        android:background="@drawable/button_background"
+        android:background="@color/black"
         android:onClick="Stat_Clientom"
         android:shadowColor="#4AC2FF"
         android:text="Стать клиентов ВТБ"
         android:textSize="20dp"
-        app:backgroundTint="#009AFF" />
+         />
 
 
 </RelativeLayout>
