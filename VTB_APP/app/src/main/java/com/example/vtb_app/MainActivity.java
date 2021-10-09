@@ -68,8 +68,11 @@ public class MainActivity extends AppCompatActivity {
 //         water = (myPreferences.getFloat("Water", 0));
 //         System.out.println(water);
 
-        Intent myIntent = new Intent(view.getContext(), MainPaige.class);
+        Intent myIntent = new Intent(view.getContext(), Loading_Guides.class);
         startActivity(myIntent);
+
+//        Intent myIntent = new Intent(view.getContext(), MainPaige.class);
+//        startActivity(myIntent);
     }
 
 //    private List<Word>  getWords() {
