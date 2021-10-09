@@ -42,11 +42,11 @@
         android:layout_marginBottom="77dp"
         android:clickable="true"
         android:onClick="UzheClient"
-        android:text="Я уже клиент втб"
+        android:text="Продолжить без регистрации"
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_finish_reg"
         android:layout_width="227dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
