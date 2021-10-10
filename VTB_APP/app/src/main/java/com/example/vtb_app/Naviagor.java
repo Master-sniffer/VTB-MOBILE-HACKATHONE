@@ -24,11 +24,11 @@ public class Naviagor extends AppCompatActivity {
         startActivity(myIntent);
     }
     public void lessons (View view){
-        Intent myIntent = new Intent(view.getContext(), MainPaige.class);
+        Intent myIntent = new Intent(view.getContext(), Lessons.class);
         startActivity(myIntent);
     }
     public void profile (View view){
-        Intent myIntent = new Intent(view.getContext(), MainPaige.class);
+        Intent myIntent = new Intent(view.getContext(), Profile.class);
         startActivity(myIntent);
     }
 }
