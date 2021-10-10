@@ -26,6 +26,18 @@
         <activity
             android:name=".Loading_Guides"
             android:label="@string/app_name" />
+        <activity
+            android:name=".Naviagor"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Lessons"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Profile"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Error"
+            android:label="@string/app_name" />
 
         <meta-data
             android:name="preloaded_fonts"

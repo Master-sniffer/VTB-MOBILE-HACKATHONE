@@ -1,31 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_popp"
+        android:layout_width="322dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="306dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Часть 3 Пройдена на 0 % "
+        android:textSize="20sp"
+        app:backgroundTint="#009AFF"></Button>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp"
-        android:text="This is the bottom sheet"
-        android:textSize="25dp"></TextView>
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/montserrat_blackitalic"
+        android:text="Первый Уровень"
+        android:textSize="34sp"></TextView>
 
     <Button
         android:id="@+id/button_popp1"
-        android:layout_width="164dp"
-        android:layout_height="98dp"
+        android:layout_width="322dp"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="125dp"></Button>
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="77dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Часть 1 Пройдена на 68%"
+        android:textSize="20sp"
+        app:backgroundTint="#009AFF"></Button>
 
     <Button
         android:id="@+id/button_popp2"
-        android:layout_width="161dp"
-        android:layout_height="96dp"
+        android:layout_width="322dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="255dp"></Button>
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="193dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Часть 2 Пройдена на 0 %"
+        android:textSize="20sp"
+        app:backgroundTint="#009AFF"></Button>
 
 </RelativeLayout>

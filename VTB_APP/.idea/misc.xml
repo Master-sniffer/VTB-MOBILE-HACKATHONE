@@ -4,18 +4,24 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/button_background.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/activity_error.xml" value="0.12409420289855072" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.7056078005749711" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.33" />
         <entry key="app/src/main/res/layout/bottom_sheet.xml" value="0.25" />
         <entry key="app/src/main/res/layout/bottom_sheet_layout.xml" value="0.22" />
         <entry key="app/src/main/res/layout/bottom_sheet_popup.xml" value="0.25" />
         <entry key="app/src/main/res/layout/categroy_rv_items.xml" value="0.22" />
         <entry key="app/src/main/res/layout/content_output.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/error.xml" value="0.18" />
         <entry key="app/src/main/res/layout/feed_line.xml" value="0.22" />
         <entry key="app/src/main/res/layout/lenta_novostei.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/lessonsss.xml" value="0.22" />
         <entry key="app/src/main/res/layout/main_screen.xml" value="0.12409420289855072" />
+        <entry key="app/src/main/res/layout/navigator.xml" value="0.25" />
         <entry key="app/src/main/res/layout/news_output.xml" value="0.25" />
         <entry key="app/src/main/res/layout/news_tv_item.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/profile.xml" value="0.25" />
         <entry key="app/src/main/res/layout/spisok_news.xml" value="0.22" />
         <entry key="app/src/main/res/layout/word_item_view.xml" value="0.31528006059985664" />
       </map>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="317dp"
+        android:layout_marginBottom="4dp"
+        android:foreground="@drawable/user_0"
+        android:onClick="profile"
+        android:text="Button"
+        app:backgroundTint="@color/white" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="231dp"
+        android:layout_marginBottom="3dp"
+        android:foreground="@drawable/nav_1"
+        android:text="Button"
+        app:backgroundTint="@color/white"
+        app:iconPadding="0dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginBottom="3dp"
+        android:foreground="@drawable/les_0"
+        android:onClick="lessons"
+        android:text="Button"
+        app:backgroundTint="@color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="356dp"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="269dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Откройте для себя новое в навигаторе"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="217dp"
+        android:layout_height="245dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/business__technology__startup_account__preferences__user__profile" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="361dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="126dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Навигатор это раздел персонализированных  подборок от сотрудников ВТБ и новостных агентсв."
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_finish_reg"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/button_background"
+        android:onClick="Nachat"
+        android:shadowColor="#4AC2FF"
+        android:text="Поехали"
+        android:textSize="20dp"
+        app:backgroundTint="#009AFF" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="59dp"
+        android:clickable="false"
+        android:text="Button"
+        app:backgroundTint="@color/black" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="4dp"
+        android:foreground="@drawable/home_0"
+        android:onClick="Home"
+        android:text="Button"
+        app:backgroundTint="@color/white" />
+
+</RelativeLayout>
