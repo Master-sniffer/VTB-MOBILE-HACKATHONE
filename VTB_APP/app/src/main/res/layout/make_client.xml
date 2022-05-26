@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="653dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.15"
+        android:baselineAlignBottom="false"
+        android:clickable="false"
+        android:src="@drawable/woman_it" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="404dp"
+        android:ems="10"
+        android:hint="Почта"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/EnterEmailAndName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Введите Имя и свою почту"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button_finish_reg"
+        android:layout_width="230dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/button_background"
+        android:onClick="SignIn"
+        android:shadowColor="#4AC2FF"
+        android:text="Войти в ВТБ"
+        android:textColor="@color/white"
+        android:textSize="21dp"
+        app:backgroundTint="#009AFF" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="283dp"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="textPersonName" />
+
+
+</RelativeLayout>

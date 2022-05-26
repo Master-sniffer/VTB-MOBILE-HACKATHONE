@@ -8,12 +8,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import From_Down_Below.ExampleButtonSheet;
 
-public class Lessons extends AppCompatActivity implements ExampleButtonSheet.BottomSheetListener {
+public class Lesson_Page extends AppCompatActivity implements ExampleButtonSheet.BottomSheetListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lessonsss);
+        setContentView(R.layout.lesson_page);
     }
 
     public void Navigator (View view){

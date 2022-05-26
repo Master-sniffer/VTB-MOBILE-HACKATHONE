@@ -4,15 +4,21 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Profile extends AppCompatActivity {
 
+    TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
+        textView = findViewById(R.id.textView11);
+        textView.setText("Добро пожаловать, "+MakeClient.name.getText());
+
     }
 
 
@@ -21,7 +27,7 @@ public class Profile extends AppCompatActivity {
         startActivity(myIntent);
     }
     public void lessons (View view){
-        Intent myIntent = new Intent(view.getContext(), Lessons.class);
+        Intent myIntent = new Intent(view.getContext(), Lesson_Page.class);
         startActivity(myIntent);
     }
     public void navigator (View view){

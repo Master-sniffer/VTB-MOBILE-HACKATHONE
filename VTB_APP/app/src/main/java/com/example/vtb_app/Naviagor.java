@@ -24,7 +24,7 @@ public class Naviagor extends AppCompatActivity {
         startActivity(myIntent);
     }
     public void lessons (View view){
-        Intent myIntent = new Intent(view.getContext(), Lessons.class);
+        Intent myIntent = new Intent(view.getContext(), Lesson_Page.class);
         startActivity(myIntent);
     }
     public void profile (View view){

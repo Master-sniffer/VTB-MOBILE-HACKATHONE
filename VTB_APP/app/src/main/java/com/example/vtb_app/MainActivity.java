@@ -5,17 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.preference.PreferenceManager;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.Arrays;
-import java.util.List;
-
-import Word_Adapter.Word_Adaptation;
+import java.sql.SQLException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,50 +29,28 @@ public class MainActivity extends AppCompatActivity {
 
         myPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
         myEditor = myPreferences.edit();
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
 
-
-
-//        EnterText = findViewById(R.id.EnterText);
-//        button_acpt = findViewById(R.id.button_acpt);
-//        View_Result = findViewById(R.id.View_Result);
-//
-//        word_adaptation = new Word_Adaptation();
-//
-//        List<Word> words = getWords();
-//        word_adaptation.SetWords(words);
-//
-//
-//        button_acpt.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (EnterText.getText().toString().trim().equals("")){
-//                    Toast.makeText(MainActivity.this, R.string.No_User_Input, Toast.LENGTH_LONG).show();
-//                }
-//            }
-//        });
+        //NEED THIS TO CHECK OUR DB
+        DataBase dataBase = null;
+        try {
+            dataBase = new DataBase();
+            dataBase.getAllUsers();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
 
     }
 
     public void UzheClient(View view){
-//        myEditor.putFloat("Water", water+=1);
-//        myEditor.commit();
-        Intent myIntent = new Intent(view.getContext(), Lessons.class);
+        Intent myIntent = new Intent(view.getContext(), Lesson_Page.class);
         startActivity(myIntent);
     }
 
     public void Nachat (View view){
-//         water = (myPreferences.getFloat("Water", 0));
-//         System.out.println(water);
-
 
         Intent myIntent = new Intent(view.getContext(), MainPaige.class);
         startActivity(myIntent);
     }
-
-//    private List<Word>  getWords() {
-//        return Arrays.asList(
-//                new Word("Мать", "Mother"),
-//                new Word("Отец", "Batya")
-//        );
-//    }
 }

@@ -1,13 +1,10 @@
 package com.example.vtb_app;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
 
 import From_Down_Below.ExampleButtonSheet;
 
@@ -17,9 +14,7 @@ public class MainPaige extends AppCompatActivity implements ExampleButtonSheet.B
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.word_item_view);
-
-
+        setContentView(R.layout.main_paige);
 
     }
 
@@ -30,12 +25,8 @@ public class MainPaige extends AppCompatActivity implements ExampleButtonSheet.B
     }
 
     public void Stat_Clientom(View view){
-        Intent myIntent = new Intent(view.getContext(), Lessons.class);
+        Intent myIntent = new Intent(view.getContext(), MakeClient.class);
         startActivity(myIntent);
-//        ExampleButtonSheet bottom_sheet = new ExampleButtonSheet();
-//        bottom_sheet.show(getSupportFragmentManager(), "example bottom sheet");
-
-
     }
 
     @Override

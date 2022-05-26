@@ -27,7 +27,7 @@ public class Word_Adaptation extends RecyclerView.Adapter<Word_Adaptation.WordVi
     @Override
     public WordViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Context context = parent.getContext();
-        View view = LayoutInflater.from(context).inflate(R.layout.word_item_view, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.main_paige, parent, false);
 
         return new WordViewHolder(view);
     }
